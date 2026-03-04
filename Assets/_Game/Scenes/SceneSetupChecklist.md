@@ -1,5 +1,12 @@
 # Vertical Slice Setup Checklist (Unity 2022+ URP 2D)
 
+## 0) One-click setup (as far as editor automation can go)
+1. Open Unity Editor and let scripts compile.
+2. Run `Tools/_Game/Setup Vertical Slice Project`.
+3. This auto-generates: placeholder prefabs, core ScriptableObject assets, Boot/Overworld/Battle scenes, and Build Settings scene order.
+4. Then only do final manual polish (sprites, animator clips/blend trees, tile assets, and Input Actions asset binding).
+
+
 ## 1) Folder Structure
 Use these folders exactly:
 - `Assets/_Game/Scripts/{Core,Data,Overworld,Battle,Narrative,UI}`
@@ -50,6 +57,17 @@ Create under `Assets/_Game/Data/Definitions/`:
   - All Characters: all of the above
 
 ## 4) Prefabs
+
+### Auto-generate prefabs (recommended)
+- Use Unity menu: `Tools/_Game/Generate Placeholder Prefabs`.
+- This generates:
+  - `Prefabs/Characters/PF_Player_Cora.prefab`
+  - `Prefabs/Characters/PF_BattleActor.prefab`
+  - `Prefabs/UI/PF_TargetButton.prefab`
+  - `Prefabs/UI/PF_ChoicePanel.prefab`
+  - `Prefabs/Systems/PF_GameSession.prefab`
+  - `Prefabs/Systems/PF_SceneRouter.prefab`
+- After generation, assign references in scene objects as listed below.
 
 ### Systems
 - `GameSession` prefab:
