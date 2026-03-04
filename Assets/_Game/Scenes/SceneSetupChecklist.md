@@ -6,6 +6,7 @@
 3. This auto-generates: placeholder prefabs, core ScriptableObject assets, Boot/Overworld/Battle scenes, and Build Settings scene order.
 4. Then only do final manual polish (sprites, animator clips/blend trees, tile assets, and Input Actions asset binding).
 
+
 ## 1) Folder Structure
 Use these folders exactly:
 - `Assets/_Game/Scripts/{Core,Data,Overworld,Battle,Narrative,UI}`
